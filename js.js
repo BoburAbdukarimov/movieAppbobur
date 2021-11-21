@@ -6,10 +6,13 @@ const IMG =
 const search_Api =
 'https://api.themoviedb.org/3/search/movie?api_key=5fa6f0117dcc8018fa9fd91f5bf07432&query="';
 
-// https://api.themoviedb.org/3/search/movie?api_key=5fa6f0117dcc8018fa9fd91f5bf07432&query=Jack+Reacher
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
+const icon = document.querySelector(".icon");
+icon.onclick = function () {
+    form.classList.toggle("active");
+}
 
 getMovies(API);
 
@@ -63,3 +66,5 @@ form.addEventListener("submit", (e)=>{
     }
 
 })
+
+//yangui
